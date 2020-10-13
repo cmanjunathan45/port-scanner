@@ -35,6 +35,7 @@ urlMaxPort=Entry(root,fg="#22a7cc",bg="black",font=("courier",15,"bold italic"),
 urlMaxPort.place(x=270,y=180)
 
 def find():
+	textShow.delete("1.0",END)
 	def process():
 		try:
 			target = socket.gethostbyname(urlEntry.get())  
